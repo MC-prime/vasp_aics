@@ -1,6 +1,6 @@
-# VASP - Venture & Student Platform
+# VASP - Valorizing Academic Student Project
 
-A comprehensive Next.js application that connects innovative students with forward-thinking investors. This platform allows students to showcase their projects and enables investors to discover and fund promising ventures.
+A comprehensive Next.js application that connects innovative students with forward-thinking investors. This platform allows students to showcase their projects and enables investors to discover and fund promising projects.
 
 ## 🚀 Features
 
