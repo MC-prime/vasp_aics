@@ -3,6 +3,12 @@
 import { useState } from 'react';
 import Link from 'next/link';
 import Navigation from '../../components/Navigation';
+import VisitorHeroSection from '../../components/visitor/VisitorHeroSection';
+import StatsSection from '../../components/visitor/StatsSection';
+import SearchFilterSection from '../../components/visitor/SearchFilterSection';
+import ProjectGrid from '../../components/visitor/ProjectGrid';
+import CallToActionSection from '../../components/visitor/CallToActionSection';
+import Footer from '../../components/landingPage/footer';
 
 export default function VisitorPage() {
   // State for search and filtering
@@ -157,53 +163,10 @@ export default function VisitorPage() {
       <Navigation userType="visitor" />
 
       {/* Hero Section */}
-      <section className="bg-gradient-to-r from-indigo-600 to-purple-600 text-white py-20">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-5xl font-bold mb-6">
-            Discover Innovative Student Projects
-          </h2>
-          <p className="text-xl mb-8 max-w-3xl mx-auto">
-            Explore groundbreaking projects created by talented students from universities worldwide. 
-            Find your next investment opportunity or get inspired by innovative solutions.
-          </p>
-          <div className="flex justify-center space-x-4">
-            <Link href="/" className="bg-white text-indigo-600 px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors">
-              Get Started
-            </Link>
-            <a href="#projects" className="border-2 border-white text-white px-8 py-3 rounded-lg font-semibold hover:bg-white hover:text-indigo-600 transition-colors">
-              View Projects
-            </a>
-          </div>
-        </div>
-      </section>
+      <VisitorHeroSection />
 
       {/* Statistics Section */}
-      <section className="py-16 bg-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 md:grid-cols-5 gap-8 text-center">
-            <div>
-              <div className="text-4xl font-bold text-indigo-600 mb-2">{stats.totalProjects}</div>
-              <div className="text-gray-600">Total Projects</div>
-            </div>
-            <div>
-              <div className="text-4xl font-bold text-indigo-600 mb-2">{stats.totalStudents}</div>
-              <div className="text-gray-600">Students</div>
-            </div>
-            <div>
-              <div className="text-4xl font-bold text-indigo-600 mb-2">{stats.totalInvestors}</div>
-              <div className="text-gray-600">Investors</div>
-            </div>
-            <div>
-              <div className="text-4xl font-bold text-indigo-600 mb-2">{stats.totalFunding}</div>
-              <div className="text-gray-600">Total Funding</div>
-            </div>
-            <div>
-              <div className="text-4xl font-bold text-indigo-600 mb-2">{stats.successRate}</div>
-              <div className="text-gray-600">Success Rate</div>
-            </div>
-          </div>
-        </div>
-      </section>
+      <StatsSection stats={stats} />
 
       {/* Search and Filter Section */}
       <section id="projects" className="py-12 bg-gray-50">
@@ -417,33 +380,7 @@ export default function VisitorPage() {
                 Connecting innovative students with forward-thinking investors to build the future together.
               </p>
             </div>
-            <div>
-              <h4 className="text-lg font-semibold mb-4">For Students</h4>
-              <ul className="space-y-2 text-gray-400">
-                <li><a href="#" className="hover:text-white">How It Works</a></li>
-                <li><a href="#" className="hover:text-white">Submit Project</a></li>
-                <li><a href="#" className="hover:text-white">Success Stories</a></li>
-                <li><a href="#" className="hover:text-white">Student Resources</a></li>
-              </ul>
-            </div>
-            <div>
-              <h4 className="text-lg font-semibold mb-4">For Investors</h4>
-              <ul className="space-y-2 text-gray-400">
-                <li><a href="#" className="hover:text-white">Find Projects</a></li>
-                <li><a href="#" className="hover:text-white">Investment Guide</a></li>
-                <li><a href="#" className="hover:text-white">Portfolio</a></li>
-                <li><a href="#" className="hover:text-white">Investor Resources</a></li>
-              </ul>
-            </div>
-            <div>
-              <h4 className="text-lg font-semibold mb-4">Support</h4>
-              <ul className="space-y-2 text-gray-400">
-                <li><a href="#" className="hover:text-white">Help Center</a></li>
-                <li><a href="#" className="hover:text-white">Contact Us</a></li>
-                <li><a href="#" className="hover:text-white">Privacy Policy</a></li>
-                <li><a href="#" className="hover:text-white">Terms of Service</a></li>
-              </ul>
-            </div>
+
           </div>
           <div className="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
             <p>&copy; 2024 VASP. All rights reserved.</p>

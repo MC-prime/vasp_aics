@@ -22,12 +22,30 @@ export default function footer() {
               </ul>
             </div>
             <div>
+              <h4 className="text-lg font-semibold mb-4">For Students</h4>
+              <ul className="space-y-2 text-gray-400">
+                <li><a href="#" className="hover:text-white">How It Works</a></li>
+                <li><a href="#" className="hover:text-white">Submit Project</a></li>
+                <li><a href="#" className="hover:text-white">Success Stories</a></li>
+                <li><a href="#" className="hover:text-white">Student Resources</a></li>
+              </ul>
+            </div>
+            <div>
+              <h4 className="text-lg font-semibold mb-4">For Investors</h4>
+              <ul className="space-y-2 text-gray-400">
+                <li><a href="#" className="hover:text-white">Find Projects</a></li>
+                <li><a href="#" className="hover:text-white">Investment Guide</a></li>
+                <li><a href="#" className="hover:text-white">Portfolio</a></li>
+                <li><a href="#" className="hover:text-white">Investor Resources</a></li>
+              </ul>
+            </div>
+            <div>
               <h4 className="text-lg font-semibold mb-4">Support</h4>
               <ul className="space-y-2 text-gray-400">
                 <li><a href="#" className="hover:text-white">Help Center</a></li>
+                <li><a href="#" className="hover:text-white">Contact Us</a></li>
                 <li><a href="#" className="hover:text-white">Privacy Policy</a></li>
                 <li><a href="#" className="hover:text-white">Terms of Service</a></li>
-                <li><a href="#" className="hover:text-white">FAQ</a></li>
               </ul>
             </div>
           </div>
