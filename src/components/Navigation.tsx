@@ -1,5 +1,6 @@
 'use client';
 
+import Image from 'next/image';
 import Link from 'next/link';
 import { useState } from 'react';
 
@@ -56,7 +57,13 @@ export default function Navigation({ userType = 'visitor' }: NavigationProps) {
           {/* Logo */}
           <div className="flex items-center">
             <Link href="/" className="flex items-center">
-              <h1 className="text-2xl font-bold text-indigo-600">VASP</h1>
+              {/* <h1 className="text-2xl font-bold text-indigo-600">VASP</h1> */}
+              <Image
+                src={'/logo.PNG'}
+                height={200}
+                width={100}
+                alt='VASP logo'
+              />
               <span className="ml-2 text-gray-600 text-sm hidden sm:block">
                 Valorizing Academic Student Project
               </span>

@@ -20,7 +20,7 @@ interface OverviewSectionProps {
 }
 
 export default function OverviewSection({ projects }: OverviewSectionProps) {
-  return (
+  return(
     <div className="max-w-6xl">
       <div className="mb-8">
         <h3 className="text-2xl font-bold text-gray-900 mb-6">Dashboard Overview</h3>
@@ -119,5 +119,6 @@ export default function OverviewSection({ projects }: OverviewSectionProps) {
           </div>
         </div>
       </div>
-  );
+    </div>
+);
 }
